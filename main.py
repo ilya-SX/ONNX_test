@@ -27,7 +27,7 @@ pytorch_model.eval()
 pytorch_model.to(device)
 
 # image
-im = skimage.io.imread(image_path)
+im = skimage.io.imread(in_image_path)
 im = skimage.transform.resize(im, (600, 1200))
 
 # for each batch size
